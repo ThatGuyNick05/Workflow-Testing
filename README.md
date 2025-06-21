@@ -8,7 +8,7 @@ It's made to be intentionally  minimal, for the sake of focusing on CI integrati
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 The Tech Stack
 
 - **Language:** TypeScript
 - **Testing:** Jest
