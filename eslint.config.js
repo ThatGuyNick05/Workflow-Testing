@@ -8,14 +8,14 @@ module.exports = [
       parser: parserTs,
       parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
-      }
+        sourceType: 'module',
+      },
     },
     plugins: {
-      '@typescript-eslint': eslintPluginTs
+      '@typescript-eslint': eslintPluginTs,
     },
     rules: {
       // Add or tweak rules here
-    }
-  }
+    },
+  },
 ];
