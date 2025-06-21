@@ -1,6 +1,8 @@
 # Workflow-Testing
 
 ![CI](https://github.com/ThatGuyNick05/Workflow-Testing/actions/workflows/ci.yml/badge.svg?branch=main)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen?style=flat-square)
+
 
 This repository exists purely as a demonstration of an integrated development workflow.
 
