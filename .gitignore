@@ -134,3 +134,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Compiled JavaScript output
+*.js
+*.js.map
+src/*.js
+tests/*.js
+
+# TypeScript build output
+dist/
