@@ -1,5 +1,11 @@
 import { add } from '../src/index';
 
-test('adds 2 + 2 to equal 4', () => {
-  expect(add(2, 2)).toBe(4);
+describe('index.ts', () => {
+  test('adds positive numbers correctly', () => {
+    expect(add(3, 7)).toBe(10);
+  });
+
+  test('adds negative numbers correctly', () => {
+    expect(add(-5, -6)).toBe(-11);
+  });
 });
