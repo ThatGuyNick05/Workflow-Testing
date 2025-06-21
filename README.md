@@ -1,6 +1,6 @@
 # Workflow-Testing
 
-![CI](https://github.com/ThatGuyNick05/Workflow-Testing/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ThatGuyNick05/Workflow-Testing/actions/workflows/ci.yml/badge.svg?branch=main)
 
 This repository exists purely as a demonstration of an integrated development workflow.
 
