@@ -20,7 +20,7 @@ async function run() {
       pull_number: pullRequest.number,
     });
 
-    const changedFiles = files.map(file => file.filename);
+    const changedFiles = files.map((file) => file.filename);
 
     const testGroups = new Set<string>();
 
