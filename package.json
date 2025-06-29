@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "tsc",
+    "build:filter-tests": "tsc .github/actions/filter-tests/src/index.ts --outDir .github/actions/filter-tests/dist --esModuleInterop",
     "test": "jest --coverage",
     "lint": "eslint .",
     "format": "prettier --check \"**/*.{ts,js,json}\"",
@@ -22,5 +23,9 @@
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
   }
 }

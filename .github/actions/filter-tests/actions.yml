@@ -1,0 +1,9 @@
+name: "Filter tests by changed files"
+description: "detects which test groups to run based on changed files"
+inputs:
+  github-token:
+    description: "GitHub Token"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"

@@ -85,5 +85,23 @@ jobs:
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-report-node${{ matrix.node-version }}-${{ github.run_id }}
+          name: "coverage-report-node${{ matrix.node-version }}-${{ github.run_id }}"
           path: coverage/
+
+  detect-test-groups:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run custom test group filter action
+        uses: ./.github/actions/filter-tests
+        id: filter
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print filtered test groups
+        run: 'echo "Detected test groups: ${{ steps.filter.outputs.test-groups }}"'
